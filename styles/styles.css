@@ -1,14 +1,58 @@
-
 body{
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     position: relative;
+    background-color:  hsl(225, 100%, 94%);
 }
+/* Start background section */
 .bg{
     position: absolute;
     background-image: url(../images/pattern-background-desktop.svg);
-    width: 100%;
-    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 101%;
+    height: 64vh;
     background-repeat: no-repeat;
-    top: 0;
+    top: -35px;
+    left: -10px;
 }
+/* End background section */
+
+/* Start parent section */
+.parent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+/* End parent section */
+/* Start image section */
+.image{
+    margin-bottom: -3px;
+    text-align: center;
+}
+.parent .image img{
+    border-radius: 15px 15px 0 0;
+}
+/* End image section */
+/* Start content section */
+.content{
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    border-radius: 0 0 15px 15px;
+    padding-top: 25px;
+    
+}
+.content-article{
+    padding: 0 30px;
+}
+.content .content-article h2{
+    margin-top: 0;
+    font-weight: 700;
+}
+.content .content-article p{
+    color: rgb(0 0 0 / 80%);
+}
+/* End content section */
