@@ -42,7 +42,7 @@ body{
     text-align: center;
     position: absolute;
     border-radius: 0 0 15px 15px;
-    padding-top: 25px;
+    padding: 25px 0;
     
 }
 .content-article{
@@ -56,3 +56,77 @@ body{
     color: rgb(0 0 0 / 80%);
 }
 /* End content section */
+/* Start Price Section */
+.content .price-info{
+    background-color: rgb(224 232 255 / 26%);
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    width: 325px;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+.content .price-info .icon{
+    grid-row: 1/3;
+    align-self: center;
+    padding-left: 10px;
+}
+.content .price-info .info{
+    line-height: 0.4;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.content .price-info .info p:first-child{
+    font-weight: 700;
+}
+.content .price-info .change{
+    grid-row: 1/3;
+    grid-column: 3;
+    align-self: center;
+}
+.content .price-info .change a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-family: sans-serif;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+.content .price-info .change a:hover{
+    color: hsl(245deg 75% 52% / 71%);
+    text-decoration: none;
+}
+/* End Price Section  */
+/* Start Botton Section  */
+.content .bt input{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 300px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.content .bt input:hover{
+    background-color: hsl(245deg 75% 52% / 73%);
+    cursor:pointer;
+}
+/* End Botton Section */
+.content p:not(.content-article p,.price-info p){
+    color: #00000087;
+    font-weight: 700;
+}
+.content p:not(.content-article p,.price-info p):hover{
+    color: black;
+    font-size: 900;
+    cursor: pointer;
+}
+/* for mobile view */
+@media(max-width:376px){
+    .bg{
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-size: cover;
+        background-position: center;
+    }
+}
